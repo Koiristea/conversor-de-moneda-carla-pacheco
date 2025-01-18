@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.page {
+    background-color: rgb(172, 189, 206);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.converter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    padding-bottom: 6%;
+    margin: 7% auto;
+    background-color: rgb(20, 19, 15);
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 4vh;
+    width: 90%;
+    height: auto;
+    & h1 {
+        color: white;
+        font-size: 3.8vw;
+        height: 67%;
+        margin-top: 0 1vw;
+        padding: .5vw 0;
+        text-align: center;
+        border-bottom: 2px solid rgb(40, 112, 166);
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    background-color: rgb(83, 81, 80);
+    border-radius: 10px;
+}
+
+.form-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+    & label {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+        font-size: 3.5vw;
+        margin: 20px 0;
+    }
+    & input {
+        display: flex;
+        text-align: center;
+        padding: 10px 0;
+        width: 32vw;
+        border-radius: 5px;
+        margin: 0;
+        font-size: 1.6em;
+    }
+}
+
+.form-choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+    & label {
+        display: flex;
+        justify-content: center;
+        font-size: 3.5vw;
+        margin: 10px 0 20px 0;
+    }
+    & select {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+        width: 32vw;
+        border-radius: 5px;
+        margin: 0;
+        font-size: 1.6em;
+    }
+}
+
+button {
+    width: 32vw;
+    padding: 8px;
+    margin: 10px 0;
+    background-color: rgb(51, 153, 255);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 2.9vw;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    color: white;
+    font-size: 3vw;
+    margin-bottom: 10px;
+    text-align: center;
+    -webkit-text-stroke: .02vw rgb(0, 0, 0);
+}
+
+.container {
+    margin: 3vh auto;
+    width: 90%;
+    height: 100%;
+    & canvas {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border: 2px solid rgb(40, 112, 166);
+    }
+}
+
+.error {
+    color: rgb(237, 49, 49);
+    -webkit-text-stroke: .02vw rgb(0, 0, 0);
+    font-size: 3.3vw;
+    margin-top: 2vh;
+    text-align: center;
+}
